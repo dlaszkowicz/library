@@ -87,6 +87,13 @@ form input {
 @media screen and (max-width: 768px) {
   .books-grid {
     grid-template-columns: 1fr; /* Adjusted grid template columns for smaller screens */
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .books-grid {
+    grid-template-columns: 1fr 1fr; /* Adjusted grid template columns for smaller screens */
+    width: 70%;
   }
 }
 .card {
@@ -102,6 +109,7 @@ form input {
   margin: 20px;
 }
 .card p {
+  text-align: center;
   margin: 5px;
 }
 .card p:last-child {
