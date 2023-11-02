@@ -27,14 +27,15 @@
       <div class="form-container">
         <form class="new-book-form">
           <h2><center>Add new book</center></h2>
-          <input type="text" placeholder="Title" required />
-          <input type="text" placeholder="Author" required />
-          <input type="number" placeholder="Pages" required />
+          <input type="text" placeholder="Title" name="title" required />
+          <input type="text" placeholder="Author" name="author" required />
+          <input type="number" placeholder="Pages" name="pages" required />
           <label for="checkbox"><center>Have you read it?</center></label>
-          <input type="checkbox" required />
-          <button type="submit">Submit</button>
+          <input type="checkbox" name="read" />
+          <button type="submit" OnClick="addBookToLibrary()">Submit</button>
         </form>
       </div>
+      <div class="books-grid"></div>
     </div>
 
     <div class="footer">Copyright © 2023 dlaszkowicz</div>
