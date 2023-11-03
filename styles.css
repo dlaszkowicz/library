@@ -84,15 +84,21 @@ form input {
   width: 70%;
   flex: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   .books-grid {
-    grid-template-columns: 1fr; /* Adjusted grid template columns for smaller screens */
+    grid-template-columns: 1fr 1fr 1fr; /* Adjusted grid template columns for smaller screens */
     width: 70%;
   }
 }
 @media screen and (max-width: 1200px) {
   .books-grid {
     grid-template-columns: 1fr 1fr; /* Adjusted grid template columns for smaller screens */
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .books-grid {
+    grid-template-columns: 1fr; /* Adjusted grid template columns for smaller screens */
     width: 70%;
   }
 }
